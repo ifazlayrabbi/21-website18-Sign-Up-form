@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="shortcut icon" href="Cherry-Cake.ico" type="image/x-icon">
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color:#19195c;
+    }
+    .center-aligned {
+      text-align: center;
+    }
+    .center-aligned p {padding-bottom: 30px;}
+    .center-aligned p {margin-top: 10px;}
+    .center-aligned h1 {margin: 0;}
+  
+    * {box-sizing: border-box;}
+
+    .box {
+      background: #fff;
+      max-width: 450px;
+      margin: 0 auto;
+      margin-top: 50px;
+      padding: 30px 30px 20px;
+      border-radius: 5px;
+    }
+
+    input {
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid #d4d3d3;
+      outline: none;
+      padding: 12px;
+      margin: 8px auto;
+    }
+
+    .sign-up-btn {
+      border-style: none;
+      background-color:#3838ac;
+      color: #fff;
+      font-size: 18px;
+    }
+
+    .sign-up-btn:hover {
+      background-color: #383872;
+      color: #e7d7bc;
+      cursor: pointer;
+    }
+
+    .box p {
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    .box p a {
+      text-decoration: none;
+    }
+
+    .out-of-box {
+      max-width: 400px;
+      margin: auto;
+      text-align: center;
+      color: #fff;
+    }
+
+    .out-of-box p a {
+      color: green;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+
+  <main class="box">
+    <div class="center-aligned">
+      <h1>Sign Up</h1>
+      <p>It's free and only takes a minute.</p>
+    </div>
+    <form action="/" method="POST">
+      <div>
+        <label for="first_name">First Name</label><br/>
+        <input type="text" name="firstName" id="first_name"><br><br>
+      </div>
+      <div>
+        <label for="last_name">Last Name</label><br/>
+        <input type="text" name="lastName" id="last_name"><br><br>
+      </div>
+      <div>
+        <label for="email_">Email</label><br/>
+        <input type="email" name="email" id="email_"><br><br>
+      </div>
+      <div>
+        <label for="password_1">Password</label><br/>
+        <input type="password" name="password1" id="password_1"><br><br>
+      </div>
+      <div>
+        <label for="password_2">Confirm Password</label><br/>
+        <input type="password" name="password2" id="password_2"><br><br>
+      </div>
+      <input class="sign-up-btn" type="submit" value="Sign Up">
+    </form>
+    <p>By clicking on the Sign Up button, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.</p>
+  </main>
+  <footer class="out-of-box">
+    <p>Already have an account? <a href="#"><strong>Login Here</strong></a>.</p>
+  </footer>
+</body>
+</html>
